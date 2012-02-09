@@ -1,0 +1,26 @@
+#! /bin/sh
+
+proc=scron
+crondir=/etc/scron
+
+killproc () {
+    local sig=$1
+    pid=`ps | grep "${proc}.*${crondir}" | awk '{print $1}'`
+    [ "$pid" != "" ] && kill $sig $pid
+}
+
+case "$1" in
+    start)
+        oss-cron $crondir &
+        ;;
+    stop)
+        killproc
+        ;;
+    restart)
+        killproc
+        oss-cron $crondir &
+        ;;
+    *)
+        echo "usage: $0 { start | stop | restart }"
+        ;;
+esac

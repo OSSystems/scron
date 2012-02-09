@@ -1,0 +1,5 @@
+;;; scron.setup -*- scheme -*-
+
+(compile -O3 -d1 scron.scm)
+
+(install-program 'scron '("scron"))

@@ -1,0 +1,8 @@
+;;;; -*- scheme -*-
+((synopsis "A very simple cron program")
+ (author "O.S. Systems")
+ (license "BSD")
+ (category misc)
+ (doc-from-wiki)
+ (egg "scron.egg")
+ )
