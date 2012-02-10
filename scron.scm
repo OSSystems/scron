@@ -1,4 +1,5 @@
 (use srfi-1 srfi-18 posix)
+(declare (uses chicken-syntax))
 
 (define (schedule! basedir)
   (let ((wait-for-thread #f))
