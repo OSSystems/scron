@@ -11,8 +11,7 @@
                  (thread-start!
                   (lambda ()
                     (let loop ()
-                      (let ((files (append (glob (make-pathname dir "*.scm"))
-                                           (glob (make-pathname dir "*.so")))))
+                      (let ((files (glob (make-pathname dir "*.scm"))))
                         (for-each load files))
                       (thread-sleep! interval)
                       (loop))))))))
