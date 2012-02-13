@@ -11,14 +11,14 @@ killproc () {
 
 case "$1" in
     start)
-        oss-cron $crondir &
+        scron $crondir &
         ;;
     stop)
         killproc
         ;;
     restart)
         killproc
-        oss-cron $crondir &
+        scron $crondir &
         ;;
     *)
         echo "usage: $0 { start | stop | restart }"
