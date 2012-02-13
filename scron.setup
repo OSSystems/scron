@@ -2,4 +2,4 @@
 
 (compile -O3 -d1 scron.scm)
 
-(install-program 'scron '("scron") '((version "0.1")))
+(install-program 'scron '("scron") '((version "0.2")))
