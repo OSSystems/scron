@@ -1,6 +1,7 @@
 ;;;; -*- scheme -*-
 ((synopsis "A very simple cron program")
  (author "O.S. Systems")
+ (maintainer "<a href=\"http://wiki.call-cc.org/users/mario-domenech-goulart\">Mario Domenech Goulart</a>")
  (license "BSD")
  (category misc)
  (doc-from-wiki)
